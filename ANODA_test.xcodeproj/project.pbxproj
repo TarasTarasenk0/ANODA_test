@@ -1,0 +1,474 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3006CFDA248AC995007515FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3006CFD9248AC995007515FB /* AppDelegate.swift */; };
+		3006CFDC248AC995007515FB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3006CFDB248AC995007515FB /* SceneDelegate.swift */; };
+		3006CFDE248AC995007515FB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3006CFDD248AC995007515FB /* ViewController.swift */; };
+		3006CFE1248AC995007515FB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3006CFDF248AC995007515FB /* Main.storyboard */; };
+		3006CFE3248AC99D007515FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3006CFE2248AC99D007515FB /* Assets.xcassets */; };
+		3006CFE6248AC99D007515FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3006CFE4248AC99D007515FB /* LaunchScreen.storyboard */; };
+		3006CFF1248AC99E007515FB /* ANODA_testTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3006CFF0248AC99E007515FB /* ANODA_testTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3006CFED248AC99E007515FB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3006CFCE248AC995007515FB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3006CFD5248AC995007515FB;
+			remoteInfo = ANODA_test;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3006CFD6248AC995007515FB /* ANODA_test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ANODA_test.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3006CFD9248AC995007515FB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3006CFDB248AC995007515FB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		3006CFDD248AC995007515FB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3006CFE0248AC995007515FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3006CFE2248AC99D007515FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3006CFE5248AC99D007515FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3006CFE7248AC99D007515FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3006CFEC248AC99E007515FB /* ANODA_testTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ANODA_testTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3006CFF0248AC99E007515FB /* ANODA_testTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ANODA_testTests.swift; sourceTree = "<group>"; };
+		3006CFF2248AC99E007515FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3006CFD3248AC995007515FB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3006CFE9248AC99E007515FB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3006CFCD248AC995007515FB = {
+			isa = PBXGroup;
+			children = (
+				3006CFD8248AC995007515FB /* ANODA_test */,
+				3006CFEF248AC99E007515FB /* ANODA_testTests */,
+				3006CFD7248AC995007515FB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3006CFD7248AC995007515FB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3006CFD6248AC995007515FB /* ANODA_test.app */,
+				3006CFEC248AC99E007515FB /* ANODA_testTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3006CFD8248AC995007515FB /* ANODA_test */ = {
+			isa = PBXGroup;
+			children = (
+				3006CFD9248AC995007515FB /* AppDelegate.swift */,
+				3006CFDB248AC995007515FB /* SceneDelegate.swift */,
+				3006CFDD248AC995007515FB /* ViewController.swift */,
+				3006CFDF248AC995007515FB /* Main.storyboard */,
+				3006CFE2248AC99D007515FB /* Assets.xcassets */,
+				3006CFE4248AC99D007515FB /* LaunchScreen.storyboard */,
+				3006CFE7248AC99D007515FB /* Info.plist */,
+			);
+			path = ANODA_test;
+			sourceTree = "<group>";
+		};
+		3006CFEF248AC99E007515FB /* ANODA_testTests */ = {
+			isa = PBXGroup;
+			children = (
+				3006CFF0248AC99E007515FB /* ANODA_testTests.swift */,
+				3006CFF2248AC99E007515FB /* Info.plist */,
+			);
+			path = ANODA_testTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3006CFD5248AC995007515FB /* ANODA_test */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3006CFF5248AC99E007515FB /* Build configuration list for PBXNativeTarget "ANODA_test" */;
+			buildPhases = (
+				3006CFD2248AC995007515FB /* Sources */,
+				3006CFD3248AC995007515FB /* Frameworks */,
+				3006CFD4248AC995007515FB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ANODA_test;
+			productName = ANODA_test;
+			productReference = 3006CFD6248AC995007515FB /* ANODA_test.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3006CFEB248AC99E007515FB /* ANODA_testTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3006CFF8248AC99E007515FB /* Build configuration list for PBXNativeTarget "ANODA_testTests" */;
+			buildPhases = (
+				3006CFE8248AC99E007515FB /* Sources */,
+				3006CFE9248AC99E007515FB /* Frameworks */,
+				3006CFEA248AC99E007515FB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3006CFEE248AC99E007515FB /* PBXTargetDependency */,
+			);
+			name = ANODA_testTests;
+			productName = ANODA_testTests;
+			productReference = 3006CFEC248AC99E007515FB /* ANODA_testTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3006CFCE248AC995007515FB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1120;
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = md760;
+				TargetAttributes = {
+					3006CFD5248AC995007515FB = {
+						CreatedOnToolsVersion = 11.2;
+					};
+					3006CFEB248AC99E007515FB = {
+						CreatedOnToolsVersion = 11.2;
+						TestTargetID = 3006CFD5248AC995007515FB;
+					};
+				};
+			};
+			buildConfigurationList = 3006CFD1248AC995007515FB /* Build configuration list for PBXProject "ANODA_test" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3006CFCD248AC995007515FB;
+			productRefGroup = 3006CFD7248AC995007515FB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3006CFD5248AC995007515FB /* ANODA_test */,
+				3006CFEB248AC99E007515FB /* ANODA_testTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3006CFD4248AC995007515FB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3006CFE6248AC99D007515FB /* LaunchScreen.storyboard in Resources */,
+				3006CFE3248AC99D007515FB /* Assets.xcassets in Resources */,
+				3006CFE1248AC995007515FB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3006CFEA248AC99E007515FB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3006CFD2248AC995007515FB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3006CFDE248AC995007515FB /* ViewController.swift in Sources */,
+				3006CFDA248AC995007515FB /* AppDelegate.swift in Sources */,
+				3006CFDC248AC995007515FB /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3006CFE8248AC99E007515FB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3006CFF1248AC99E007515FB /* ANODA_testTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3006CFEE248AC99E007515FB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3006CFD5248AC995007515FB /* ANODA_test */;
+			targetProxy = 3006CFED248AC99E007515FB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3006CFDF248AC995007515FB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3006CFE0248AC995007515FB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3006CFE4248AC99D007515FB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3006CFE5248AC99D007515FB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3006CFF3248AC99E007515FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3006CFF4248AC99E007515FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3006CFF6248AC99E007515FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CX3ZPJT3PN;
+				INFOPLIST_FILE = ANODA_test/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "tarasenkoTaras.ANODA-test";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3006CFF7248AC99E007515FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CX3ZPJT3PN;
+				INFOPLIST_FILE = ANODA_test/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "tarasenkoTaras.ANODA-test";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3006CFF9248AC99E007515FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CX3ZPJT3PN;
+				INFOPLIST_FILE = ANODA_testTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "tarasenkoTaras.ANODA-testTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ANODA_test.app/ANODA_test";
+			};
+			name = Debug;
+		};
+		3006CFFA248AC99E007515FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CX3ZPJT3PN;
+				INFOPLIST_FILE = ANODA_testTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "tarasenkoTaras.ANODA-testTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ANODA_test.app/ANODA_test";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3006CFD1248AC995007515FB /* Build configuration list for PBXProject "ANODA_test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3006CFF3248AC99E007515FB /* Debug */,
+				3006CFF4248AC99E007515FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3006CFF5248AC99E007515FB /* Build configuration list for PBXNativeTarget "ANODA_test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3006CFF6248AC99E007515FB /* Debug */,
+				3006CFF7248AC99E007515FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3006CFF8248AC99E007515FB /* Build configuration list for PBXNativeTarget "ANODA_testTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3006CFF9248AC99E007515FB /* Debug */,
+				3006CFFA248AC99E007515FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3006CFCE248AC995007515FB /* Project object */;
+}

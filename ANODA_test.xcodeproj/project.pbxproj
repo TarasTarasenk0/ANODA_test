@@ -7,13 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3006CFDA248AC995007515FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3006CFD9248AC995007515FB /* AppDelegate.swift */; };
-		3006CFDC248AC995007515FB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3006CFDB248AC995007515FB /* SceneDelegate.swift */; };
-		3006CFDE248AC995007515FB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3006CFDD248AC995007515FB /* ViewController.swift */; };
-		3006CFE1248AC995007515FB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3006CFDF248AC995007515FB /* Main.storyboard */; };
 		3006CFE3248AC99D007515FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3006CFE2248AC99D007515FB /* Assets.xcassets */; };
 		3006CFE6248AC99D007515FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3006CFE4248AC99D007515FB /* LaunchScreen.storyboard */; };
 		3006CFF1248AC99E007515FB /* ANODA_testTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3006CFF0248AC99E007515FB /* ANODA_testTests.swift */; };
+		3006CFFC248ACD6D007515FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3006CFFB248ACD6D007515FB /* AppDelegate.swift */; };
+		3006CFFE248ACF02007515FB /* DashboardTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3006CFFD248ACF02007515FB /* DashboardTabBarController.swift */; };
+		3006D000248ACFB7007515FB /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3006CFFF248ACFB7007515FB /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,16 +27,15 @@
 
 /* Begin PBXFileReference section */
 		3006CFD6248AC995007515FB /* ANODA_test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ANODA_test.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		3006CFD9248AC995007515FB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3006CFDB248AC995007515FB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3006CFDD248AC995007515FB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		3006CFE0248AC995007515FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3006CFE2248AC99D007515FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3006CFE5248AC99D007515FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3006CFE7248AC99D007515FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3006CFEC248AC99E007515FB /* ANODA_testTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ANODA_testTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3006CFF0248AC99E007515FB /* ANODA_testTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ANODA_testTests.swift; sourceTree = "<group>"; };
 		3006CFF2248AC99E007515FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3006CFFB248ACD6D007515FB /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3006CFFD248ACF02007515FB /* DashboardTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardTabBarController.swift; sourceTree = "<group>"; };
+		3006CFFF248ACFB7007515FB /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,13 +77,12 @@
 		3006CFD8248AC995007515FB /* ANODA_test */ = {
 			isa = PBXGroup;
 			children = (
-				3006CFD9248AC995007515FB /* AppDelegate.swift */,
-				3006CFDB248AC995007515FB /* SceneDelegate.swift */,
-				3006CFDD248AC995007515FB /* ViewController.swift */,
-				3006CFDF248AC995007515FB /* Main.storyboard */,
+				3006CFFB248ACD6D007515FB /* AppDelegate.swift */,
 				3006CFE2248AC99D007515FB /* Assets.xcassets */,
 				3006CFE4248AC99D007515FB /* LaunchScreen.storyboard */,
 				3006CFE7248AC99D007515FB /* Info.plist */,
+				3006CFFD248ACF02007515FB /* DashboardTabBarController.swift */,
+				3006CFFF248ACFB7007515FB /* HomeViewController.swift */,
 			);
 			path = ANODA_test;
 			sourceTree = "<group>";
@@ -149,6 +146,7 @@
 				TargetAttributes = {
 					3006CFD5248AC995007515FB = {
 						CreatedOnToolsVersion = 11.2;
+						LastSwiftMigration = 1120;
 					};
 					3006CFEB248AC99E007515FB = {
 						CreatedOnToolsVersion = 11.2;
@@ -182,7 +180,6 @@
 			files = (
 				3006CFE6248AC99D007515FB /* LaunchScreen.storyboard in Resources */,
 				3006CFE3248AC99D007515FB /* Assets.xcassets in Resources */,
-				3006CFE1248AC995007515FB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -200,9 +197,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3006CFDE248AC995007515FB /* ViewController.swift in Sources */,
-				3006CFDA248AC995007515FB /* AppDelegate.swift in Sources */,
-				3006CFDC248AC995007515FB /* SceneDelegate.swift in Sources */,
+				3006CFFE248ACF02007515FB /* DashboardTabBarController.swift in Sources */,
+				3006CFFC248ACD6D007515FB /* AppDelegate.swift in Sources */,
+				3006D000248ACFB7007515FB /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,14 +222,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		3006CFDF248AC995007515FB /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3006CFE0248AC995007515FB /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		3006CFE4248AC99D007515FB /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -362,6 +351,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CX3ZPJT3PN;
 				INFOPLIST_FILE = ANODA_test/Info.plist;
@@ -371,6 +361,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "tarasenkoTaras.ANODA-test";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -380,6 +371,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CX3ZPJT3PN;
 				INFOPLIST_FILE = ANODA_test/Info.plist;

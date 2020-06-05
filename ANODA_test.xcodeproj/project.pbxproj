@@ -14,6 +14,7 @@
 		3006D000248ACFB7007515FB /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3006CFFF248ACFB7007515FB /* HomeViewController.swift */; };
 		3006D003248AD7DC007515FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3006D001248AD7DB007515FB /* AppDelegate.swift */; };
 		3006D004248AD7DC007515FB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3006D002248AD7DC007515FB /* SceneDelegate.swift */; };
+		3006D00A248ADDC2007515FB /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3006D009248ADDC2007515FB /* UIViewController+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		3006CFFF248ACFB7007515FB /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		3006D001248AD7DB007515FB /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3006D002248AD7DC007515FB /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		3006D009248ADDC2007515FB /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,13 +81,14 @@
 		3006CFD8248AC995007515FB /* ANODA_test */ = {
 			isa = PBXGroup;
 			children = (
+				3006CFFD248ACF02007515FB /* DashboardTabBarController.swift */,
+				3006D006248ADC81007515FB /* Scenes */,
+				3006D008248ADDA6007515FB /* Extensions */,
 				3006D001248AD7DB007515FB /* AppDelegate.swift */,
 				3006D002248AD7DC007515FB /* SceneDelegate.swift */,
 				3006CFE2248AC99D007515FB /* Assets.xcassets */,
-				3006D006248ADC81007515FB /* Scenes */,
 				3006CFE4248AC99D007515FB /* LaunchScreen.storyboard */,
 				3006CFE7248AC99D007515FB /* Info.plist */,
-				3006CFFD248ACF02007515FB /* DashboardTabBarController.swift */,
 			);
 			path = ANODA_test;
 			sourceTree = "<group>";
@@ -113,6 +116,14 @@
 				3006D005248ADC5E007515FB /* Home Scene */,
 			);
 			path = Scenes;
+			sourceTree = "<group>";
+		};
+		3006D008248ADDA6007515FB /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				3006D009248ADDC2007515FB /* UIViewController+Extensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -218,6 +229,7 @@
 			files = (
 				3006D003248AD7DC007515FB /* AppDelegate.swift in Sources */,
 				3006CFFE248ACF02007515FB /* DashboardTabBarController.swift in Sources */,
+				3006D00A248ADDC2007515FB /* UIViewController+Extensions.swift in Sources */,
 				3006D000248ACFB7007515FB /* HomeViewController.swift in Sources */,
 				3006D004248AD7DC007515FB /* SceneDelegate.swift in Sources */,
 			);

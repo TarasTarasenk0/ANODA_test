@@ -9,11 +9,22 @@
 import UIKit
 
 final class HomeViewController: UIViewController {
+    
+    //MARK: - Properties
+    var postsArray = [PostModel]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .red
         setupNavigationBar()
+        NetworkService.getPostDataBy(forResource: "data", ofType: "json", completion: { [weak self] (model) in
+            self?.postsArray = model!.data
+                DispatchQueue.main.async {
+                    //self.collectionView.reloadData()
+                }
+        
+        })
+        
     }
     
     private func setupNavigationBar() {

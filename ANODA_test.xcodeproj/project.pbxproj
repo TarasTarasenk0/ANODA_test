@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,9 @@
 		3006D003248AD7DC007515FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3006D001248AD7DB007515FB /* AppDelegate.swift */; };
 		3006D004248AD7DC007515FB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3006D002248AD7DC007515FB /* SceneDelegate.swift */; };
 		3006D00A248ADDC2007515FB /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3006D009248ADDC2007515FB /* UIViewController+Extensions.swift */; };
+		30C80423248BE8A300FD5E1B /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 30C80422248BE8A300FD5E1B /* data.json */; };
+		30C80425248BEDF100FD5E1B /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C80424248BEDF100FD5E1B /* NetworkService.swift */; };
+		30C80427248BF1A500FD5E1B /* InstagramModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C80426248BF1A500FD5E1B /* InstagramModel.swift */; };
 		75F17916CAB8C42AD1965AA2 /* Pods_ANODA_testTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B9B965580DAB0B4677643A0 /* Pods_ANODA_testTests.framework */; };
 		887567649F9C4F51A9114FFE /* Pods_ANODA_test.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54FA9C02A7083F92436C0F85 /* Pods_ANODA_test.framework */; };
 /* End PBXBuildFile section */
@@ -43,6 +46,9 @@
 		3006D001248AD7DB007515FB /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3006D002248AD7DC007515FB /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		3006D009248ADDC2007515FB /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
+		30C80422248BE8A300FD5E1B /* data.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
+		30C80424248BEDF100FD5E1B /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		30C80426248BF1A500FD5E1B /* InstagramModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstagramModel.swift; sourceTree = "<group>"; };
 		3B9B965580DAB0B4677643A0 /* Pods_ANODA_testTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ANODA_testTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F146BA3C8BC54F2129B1A63 /* Pods-ANODA_testTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ANODA_testTests.release.xcconfig"; path = "Target Support Files/Pods-ANODA_testTests/Pods-ANODA_testTests.release.xcconfig"; sourceTree = "<group>"; };
 		54FA9C02A7083F92436C0F85 /* Pods_ANODA_test.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ANODA_test.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -101,6 +107,9 @@
 				3006CFE2248AC99D007515FB /* Assets.xcassets */,
 				3006CFE4248AC99D007515FB /* LaunchScreen.storyboard */,
 				3006CFE7248AC99D007515FB /* Info.plist */,
+				30C80422248BE8A300FD5E1B /* data.json */,
+				30C80424248BEDF100FD5E1B /* NetworkService.swift */,
+				30C80426248BF1A500FD5E1B /* InstagramModel.swift */,
 			);
 			path = ANODA_test;
 			sourceTree = "<group>";
@@ -155,7 +164,6 @@
 				D7718AC757F30AFBFEB35ECD /* Pods-ANODA_testTests.debug.xcconfig */,
 				3F146BA3C8BC54F2129B1A63 /* Pods-ANODA_testTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -244,6 +252,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30C80423248BE8A300FD5E1B /* data.json in Resources */,
 				3006CFE6248AC99D007515FB /* LaunchScreen.storyboard in Resources */,
 				3006CFE3248AC99D007515FB /* Assets.xcassets in Resources */,
 			);
@@ -328,9 +337,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				3006D003248AD7DC007515FB /* AppDelegate.swift in Sources */,
+				30C80427248BF1A500FD5E1B /* InstagramModel.swift in Sources */,
 				3006CFFE248ACF02007515FB /* DashboardTabBarController.swift in Sources */,
 				3006D00A248ADDC2007515FB /* UIViewController+Extensions.swift in Sources */,
 				3006D000248ACFB7007515FB /* HomeViewController.swift in Sources */,
+				30C80425248BEDF100FD5E1B /* NetworkService.swift in Sources */,
 				3006D004248AD7DC007515FB /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

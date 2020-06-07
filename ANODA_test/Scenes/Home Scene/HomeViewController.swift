@@ -7,23 +7,43 @@
 //
 
 import UIKit
+import SnapKit
 
 final class HomeViewController: UIViewController {
     
+    private lazy var flowCollectionView: UICollectionView = {
+        let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
+        let collectionView = UICollectionView(frame: self.view.frame, collectionViewLayout: layout)
+        collectionView.dataSource = self
+        collectionView.delegate = self
+        collectionView.backgroundColor = .red
+        return collectionView
+    }()
+    
     //MARK: - Properties
     var postsArray = [PostModel]()
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .red
         setupNavigationBar()
+        setupCollectionView()
         NetworkService.getPostDataBy(forResource: "data", ofType: "json", completion: { [weak self] (model) in
             self?.postsArray = model!.data
-                DispatchQueue.main.async {
-                    //self.collectionView.reloadData()
-                }
-        
+            DispatchQueue.main.async {
+                //self.collectionView.reloadData()
+            }
+            
         })
+    }
+    
+    private func setupCollectionView() {
+        view.addSubview(flowCollectionView)
+        flowCollectionView.register(PostCell.self, forCellWithReuseIdentifier: PostCell.identifier)
+        flowCollectionView.snp.makeConstraints {
+            $0.top.equalTo(view.snp.topMargin)
+            $0.bottom.equalTo(view.snp.bottomMargin)
+            $0.left.right.equalToSuperview()
+        }
         
     }
     

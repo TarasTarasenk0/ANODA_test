@@ -29,9 +29,10 @@ final class CellFooterView: UIView {
         return button
     }()
     
-    let saveButton: UIButton = {
+    lazy var saveButton: UIButton = {
         let button = UIButton()
         button.setImage(#imageLiteral(resourceName: "baseline_bookmark_border_black_18dp"), for: .normal)
+        button.addTarget(self, action: #selector(saveButtonClicked), for: .touchUpInside)
         return button
     }()
     
@@ -132,4 +133,12 @@ final class CellFooterView: UIView {
         }
            likeButton.tintColor = .red
        }
+    
+    @objc func saveButtonClicked() {
+        if saveButton.currentImage == #imageLiteral(resourceName: "baseline_bookmark_border_black_18dp") {
+            saveButton.setImage(#imageLiteral(resourceName: "baseline_bookmark_black_18dp"), for: .normal)
+        } else {
+            saveButton.setImage(#imageLiteral(resourceName: "baseline_bookmark_border_black_18dp"), for: .normal)
+        }
+    }
 }

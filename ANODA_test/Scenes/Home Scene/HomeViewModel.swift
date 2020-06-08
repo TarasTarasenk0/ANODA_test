@@ -51,7 +51,7 @@ final class HomeViewModel {
         homeDataObject.photoImages = model.photoImages
 
         //LikesView
-        var peopleWhoLiked = NSMutableAttributedString()
+        let peopleWhoLiked = NSMutableAttributedString()
         let lightAttributes: [NSAttributedString.Key: Any] = [
             .font: UIFont.systemFont(ofSize: 14),
             .foregroundColor: UIColor.gray
@@ -74,7 +74,7 @@ final class HomeViewModel {
         homeDataObject.peopleWhoLiked = peopleWhoLiked
         
         //DescriptionView
-        var photoDescription = NSMutableAttributedString()
+        let photoDescription = NSMutableAttributedString()
         let profileString = NSMutableAttributedString(string: model.userName, attributes: boldAttributes)
         photoDescription.append(profileString)
         let commentString = NSMutableAttributedString(string: " Beauty ", attributes: lightAttributes)
@@ -87,6 +87,7 @@ final class HomeViewModel {
         photoDescription.append(commentWithCharacters)
         homeDataObject.photoDescripion = photoDescription
         
+        //timeView
         homeDataObject.time = model.time
         return homeDataObject
     }

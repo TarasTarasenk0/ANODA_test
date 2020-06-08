@@ -105,8 +105,8 @@ final class CellFooterView: UIView {
         
         addSubview(stackView)
         stackView.snp.makeConstraints {
-            $0.right.equalToSuperview().inset(6.0)
-            $0.left.equalToSuperview().offset(6.0)
+            $0.right.equalToSuperview().inset(12.0)
+            $0.left.equalToSuperview().offset(12.0)
             $0.bottom.equalTo(self.snp.bottom)
             $0.top.equalTo(likeButton.snp.bottom).offset(6.0)
         }

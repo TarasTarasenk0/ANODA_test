@@ -17,7 +17,6 @@ final class DashboardTabBarController: UITabBarController {
         
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        
         //MARK: - HomeViewController
         let homeVC = HomeViewController().navigated()
         let homeItem = UITabBarItem(title: "", image: #imageLiteral(resourceName: "outline_home_black_18dp"), selectedImage: #imageLiteral(resourceName: "baseline_home_black_18dp"))

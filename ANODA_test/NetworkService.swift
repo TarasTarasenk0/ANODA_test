@@ -18,8 +18,6 @@ enum NetworkService {
             } catch let error {
                 print("Error!: " + error.localizedDescription )
             }
-            
         }
     }
 }
-

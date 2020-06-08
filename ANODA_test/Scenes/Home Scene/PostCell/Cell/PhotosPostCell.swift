@@ -9,7 +9,6 @@
 import UIKit
 
 final class PhotosPostCell: UICollectionViewCell {
-    
     let postPhoto: CustomUIImage = {
         let image = CustomUIImage()
         image.contentMode = .scaleAspectFit
@@ -21,14 +20,14 @@ final class PhotosPostCell: UICollectionViewCell {
         setupView()
     }
     
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
     private func setupView() {
         addSubview(postPhoto)
         postPhoto.snp.makeConstraints {
             $0.edges.equalTo(self)
         }
-    }
-    
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
     }
 }

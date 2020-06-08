@@ -41,7 +41,6 @@ final class HomeViewController: UIViewController {
             $0.bottom.equalTo(view.snp.bottomMargin)
             $0.left.right.equalToSuperview()
         }
-        
     }
     
     private func setupNavigationBar() {

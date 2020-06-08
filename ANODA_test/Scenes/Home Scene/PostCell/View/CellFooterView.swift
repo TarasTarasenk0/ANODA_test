@@ -81,7 +81,7 @@ final class CellFooterView: UIView {
             $0.top.equalTo(self.snp.top).inset(6.0)
             $0.width.height.equalTo(30.0)
         }
-
+        
         addSubview(commentButton)
         commentButton.snp.makeConstraints {
             $0.left.equalTo(likeButton.snp.right).offset(10.0)
@@ -119,22 +119,22 @@ final class CellFooterView: UIView {
         }
     }
     
-    func configurePageControl() {
+    private func configurePageControl() {
         pageControl.currentPage = 0
         pageControl.pageIndicatorTintColor = .gray
         pageControl.currentPageIndicatorTintColor = .blue
     }
     
-    @objc func likeButtonClicked() {
+    @objc private func likeButtonClicked() {
         if likeButton.currentImage == #imageLiteral(resourceName: "baseline_favorite_border_black_18dp") {
             likeButton.setImage(#imageLiteral(resourceName: "baseline_favorite_black_18dp"), for: .normal)
         } else {
             likeButton.setImage(#imageLiteral(resourceName: "baseline_favorite_border_black_18dp"), for: .normal)
         }
-           likeButton.tintColor = .red
-       }
+        likeButton.tintColor = .red
+    }
     
-    @objc func saveButtonClicked() {
+    @objc private  func saveButtonClicked() {
         if saveButton.currentImage == #imageLiteral(resourceName: "baseline_bookmark_border_black_18dp") {
             saveButton.setImage(#imageLiteral(resourceName: "baseline_bookmark_black_18dp"), for: .normal)
         } else {

@@ -63,11 +63,10 @@ final class HomeViewModel {
         
         let likeString = NSMutableAttributedString(string: "Liked by ", attributes: lightAttributes)
         peopleWhoLiked.append(likeString)
-        for item in model.peopleWhoLiked {
-            let peopleAttributed = NSAttributedString(string: "\(item), ", attributes: boldAttributes)
-            peopleWhoLiked.append(peopleAttributed)
-        }
-        let andString = NSMutableAttributedString(string: "and ", attributes: lightAttributes)
+        let peopleWhoLikedString = model.peopleWhoLiked.map {$0}.joined(separator: ", ")
+        let peopleWhoLikedAttribute = NSAttributedString(string: peopleWhoLikedString, attributes: boldAttributes)
+        peopleWhoLiked.append(peopleWhoLikedAttribute)
+        let andString = NSMutableAttributedString(string: " and ", attributes: lightAttributes)
         peopleWhoLiked.append(andString)
         let likeCountString = NSMutableAttributedString(string: "\(model.likeCount - 2) others", attributes: boldAttributes)
         peopleWhoLiked.append(likeCountString)
@@ -87,9 +86,8 @@ final class HomeViewModel {
         photoDescription.append(commentWithCharacters)
         homeDataObject.photoDescripion = photoDescription
         
-        //timeView
+        //TimeView
         homeDataObject.time = model.time
         return homeDataObject
     }
-    
 }

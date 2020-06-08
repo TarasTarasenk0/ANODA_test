@@ -10,7 +10,6 @@ import UIKit
 
 //MARK: - UICollectionViewDelegate
 extension HomeViewController: UICollectionViewDelegate {
-    
 }
 
 //MARK: - UICollectionViewDataSource
@@ -23,12 +22,9 @@ extension HomeViewController: UICollectionViewDataSource {
         let postCell = collectionView.dequeueReusableCell(withReuseIdentifier: PostCell.identifier, for: indexPath) as! PostCell
         let currentPost = homeViewModel.homeData[indexPath.item]
         postCell.images = currentPost.photoImages
-        
         postCell.topContainerView.profileImageView.setImageFromStringUrl = currentPost.usersProfileImage
         postCell.topContainerView.profileTitle.text = currentPost.userName
         postCell.topContainerView.imageLocationName.text = currentPost.locationName
-        
-        
         postCell.botContainerView.likesLabel.attributedText = currentPost.peopleWhoLiked
         postCell.botContainerView.photoDescripionLabel.attributedText = currentPost.photoDescripion
         postCell.botContainerView.timeLabel.text = currentPost.time
@@ -39,9 +35,8 @@ extension HomeViewController: UICollectionViewDataSource {
 //MARK: - UICollectionViewDelegateFlowLayout
 extension HomeViewController: UICollectionViewDelegateFlowLayout {
     final public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let height = collectionView.frame.height
+        let height: CGFloat = 700.0
         let width = collectionView.frame.width
         return CGSize(width: width, height: height)
     }
 }
-

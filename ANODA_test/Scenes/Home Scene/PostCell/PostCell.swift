@@ -17,19 +17,21 @@ final class PostCell: UICollectionViewCell {
         let collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
         collectionView.dataSource = self
         collectionView.delegate = self
+        collectionView.backgroundColor = .white
+        collectionView.showsHorizontalScrollIndicator = false
         collectionView.isPagingEnabled = true
         return collectionView
     }()
     
     let topContainerView: CellHeaderView = {
         let view = CellHeaderView()
-        view.backgroundColor = .purple
+        view.backgroundColor = .white
         return view
     }()
     
     lazy var botContainerView: CellFooterView = {
         let view = CellFooterView()
-        view.backgroundColor = .systemPink
+        view.backgroundColor = .white
         return view
     }()
     

@@ -23,7 +23,7 @@ extension PostCell: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let postPhotoCell = collectionView.dequeueReusableCell(withReuseIdentifier: PhotosPostCell.identifier, for: indexPath) as! PhotosPostCell
-        postPhotoCell.backgroundColor = .lightGray
+        postPhotoCell.postPhoto.setImageFromStringUrl = images[indexPath.item]
         return postPhotoCell
     }
 }

@@ -10,25 +10,26 @@ import UIKit
 
 final class CellHeaderView: UIView {
     
-    lazy var profileImageView: UIImageView = {
-        let imageView = UIImageView()
-        imageView.backgroundColor = .green //set a image then
-        imageView.contentMode = .scaleAspectFit
+    lazy var profileImageView: CustomUIImage = {
+        let imageView = CustomUIImage()
+        imageView.contentMode = .scaleAspectFill
+        imageView.layer.cornerRadius = 15
         imageView.clipsToBounds = true
-        imageView.layer.cornerRadius = self.frame.width / 2
         return imageView
     }()
     
     let profileTitle: UILabel = {
         let label = UILabel()
-        label.backgroundColor = .black
+        label.textColor = .black
+        label.font = .boldSystemFont(ofSize: 16)
         label.textAlignment = .left
         return label
     }()
     
     let imageLocationName: UILabel = {
         let label = UILabel()
-        label.backgroundColor = .brown
+        label.textColor = .black
+        label.font = .systemFont(ofSize: 14)
         label.textAlignment = .left
         return label
     }()
@@ -42,7 +43,7 @@ final class CellHeaderView: UIView {
     
     let moreButton: UIButton = {
         let button = UIButton()
-        button.backgroundColor = .orange
+        button.setImage(#imageLiteral(resourceName: "outline_more_horiz_black_18dp"), for: .normal)
         return button
     }()
     
@@ -58,9 +59,9 @@ final class CellHeaderView: UIView {
     private func setupUI() {
         addSubview(profileImageView)
         profileImageView.snp.makeConstraints {
-            $0.left.equalTo(self.snp.left).inset(6.0)
+            $0.left.equalTo(self.snp.left).inset(10.0)
             $0.centerY.equalTo(self.snp.centerY)
-            $0.height.width.equalTo(35.0)
+            $0.height.width.equalTo(30.0)
         }
         
         addSubview(stackView)

@@ -10,13 +10,22 @@ import UIKit
 
 final class PhotosPostCell: UICollectionViewCell {
     
+    let postPhoto: CustomUIImage = {
+        let image = CustomUIImage()
+        image.contentMode = .scaleAspectFit
+        return image
+    }()
+    
     override init(frame: CGRect) {
         super.init(frame: frame )
         setupView()
     }
     
     private func setupView() {
-        backgroundColor = .darkGray
+        addSubview(postPhoto)
+        postPhoto.snp.makeConstraints {
+            $0.edges.equalTo(self)
+        }
     }
     
     required init?(coder: NSCoder) {

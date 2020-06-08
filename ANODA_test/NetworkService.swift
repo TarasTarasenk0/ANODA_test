@@ -9,7 +9,6 @@
 import Foundation
 
 enum NetworkService {
-    
     static func getPostDataBy(forResource: String, ofType: String, completion: @escaping ((_ model: FlowPosts?) -> Void)) {
         if let path = Bundle.main.path(forResource: forResource, ofType: ofType) {
             do {

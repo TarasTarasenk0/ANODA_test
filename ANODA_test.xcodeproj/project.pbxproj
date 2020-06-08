@@ -19,6 +19,8 @@
 		3006D003248AD7DC007515FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3006D001248AD7DB007515FB /* AppDelegate.swift */; };
 		3006D004248AD7DC007515FB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3006D002248AD7DC007515FB /* SceneDelegate.swift */; };
 		3006D00A248ADDC2007515FB /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3006D009248ADDC2007515FB /* UIViewController+Extensions.swift */; };
+		306E5299248E1F43007EF123 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306E5298248E1F43007EF123 /* HomeViewModel.swift */; };
+		306E529B248E4040007EF123 /* CustomImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306E529A248E4040007EF123 /* CustomImageView.swift */; };
 		30C80423248BE8A300FD5E1B /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 30C80422248BE8A300FD5E1B /* data.json */; };
 		30C80425248BEDF100FD5E1B /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C80424248BEDF100FD5E1B /* NetworkService.swift */; };
 		30C80427248BF1A500FD5E1B /* InstagramModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C80426248BF1A500FD5E1B /* InstagramModel.swift */; };
@@ -57,6 +59,8 @@
 		3006D001248AD7DB007515FB /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3006D002248AD7DC007515FB /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		3006D009248ADDC2007515FB /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
+		306E5298248E1F43007EF123 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		306E529A248E4040007EF123 /* CustomImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomImageView.swift; sourceTree = "<group>"; };
 		30C80422248BE8A300FD5E1B /* data.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
 		30C80424248BEDF100FD5E1B /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		30C80426248BF1A500FD5E1B /* InstagramModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstagramModel.swift; sourceTree = "<group>"; };
@@ -152,6 +156,7 @@
 				30C80422248BE8A300FD5E1B /* data.json */,
 				30C80424248BEDF100FD5E1B /* NetworkService.swift */,
 				30C80426248BF1A500FD5E1B /* InstagramModel.swift */,
+				306E529A248E4040007EF123 /* CustomImageView.swift */,
 			);
 			path = ANODA_test;
 			sourceTree = "<group>";
@@ -170,6 +175,7 @@
 			children = (
 				3006CFFF248ACFB7007515FB /* HomeViewController.swift */,
 				30C8042A248C10BB00FD5E1B /* HomeViewControllerDelegate.swift */,
+				306E5298248E1F43007EF123 /* HomeViewModel.swift */,
 				30000345248D5EF500DD39E4 /* PostCell */,
 			);
 			path = "Home Scene";
@@ -390,10 +396,12 @@
 				3006CFFE248ACF02007515FB /* DashboardTabBarController.swift in Sources */,
 				3006D00A248ADDC2007515FB /* UIViewController+Extensions.swift in Sources */,
 				3006D000248ACFB7007515FB /* HomeViewController.swift in Sources */,
+				306E529B248E4040007EF123 /* CustomImageView.swift in Sources */,
 				30C80425248BEDF100FD5E1B /* NetworkService.swift in Sources */,
 				30C8042B248C10BB00FD5E1B /* HomeViewControllerDelegate.swift in Sources */,
 				3006D004248AD7DC007515FB /* SceneDelegate.swift in Sources */,
 				30C80429248C0FFD00FD5E1B /* NSObject+Extensions.swift in Sources */,
+				306E5299248E1F43007EF123 /* HomeViewModel.swift in Sources */,
 				30C8042D248C118700FD5E1B /* PostCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

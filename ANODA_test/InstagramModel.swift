@@ -17,12 +17,8 @@ struct PostModel: Decodable {
     let userName: String
     let locationName: String
     let photoImages: [String]
-    let liked: Int
     let peopleWhoLiked: [String]
     let likeCount: Int
-    let userComment: String
+    let photoDescripion: String
     let time: String
 }
-
-
-

@@ -16,24 +16,21 @@ final class HomeViewController: UIViewController {
         let collectionView = UICollectionView(frame: self.view.frame, collectionViewLayout: layout)
         collectionView.dataSource = self
         collectionView.delegate = self
-        collectionView.backgroundColor = .red
+        collectionView.backgroundColor = .white
+        collectionView.showsVerticalScrollIndicator = false
         return collectionView
     }()
     
     //MARK: - Properties
-    var postsArray = [PostModel]()
+    let homeViewModel = HomeViewModel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setupNavigationBar()
         setupCollectionView()
-        NetworkService.getPostDataBy(forResource: "data", ofType: "json", completion: { [weak self] (model) in
-            self?.postsArray = model!.data
-            DispatchQueue.main.async {
-                //self.collectionView.reloadData()
-            }
-            
-        })
+        homeViewModel.updateCollection = {
+            self.flowCollectionView.reloadData()
+        }
     }
     
     private func setupCollectionView() {

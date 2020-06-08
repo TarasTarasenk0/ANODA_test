@@ -10,45 +10,47 @@ import UIKit
 
 final class CellFooterView: UIView {
     
-    let likeButton: UIButton = {
+    lazy var likeButton: UIButton = {
         let button = UIButton()
-        button.backgroundColor = .black
+        button.setImage(#imageLiteral(resourceName: "baseline_favorite_border_black_18dp"), for: .normal)
+        button.addTarget(self, action: #selector(likeButtonClicked), for: .touchUpInside)
         return button
     }()
     
     let commentButton: UIButton = {
         let button = UIButton()
-        button.backgroundColor = .black
+        button.setImage(#imageLiteral(resourceName: "outline_mode_comment_black_18dp"), for: .normal)
         return button
     }()
     
     let sendButton: UIButton = {
         let button = UIButton()
-        button.backgroundColor = .black
+        button.setImage(#imageLiteral(resourceName: "baseline_send_black_18dp"), for: .normal)
         return button
     }()
     
     let saveButton: UIButton = {
         let button = UIButton()
-        button.backgroundColor = .black
+        button.setImage(#imageLiteral(resourceName: "baseline_bookmark_border_black_18dp"), for: .normal)
         return button
     }()
     
     let likesLabel: UILabel = {
         let label = UILabel()
-        label.backgroundColor = .purple
+        label.numberOfLines = 2
         return label
     }()
     
     let photoDescripionLabel: UILabel = {
         let label = UILabel()
-        label.backgroundColor = .blue
+        label.numberOfLines = 0
         return label
     }()
     
     let timeLabel: UILabel = {
         let label = UILabel()
-        label.backgroundColor = .green
+        label.textColor = .gray
+        label.font = UIFont.systemFont(ofSize: 12)
         return label
     }()
     
@@ -74,30 +76,30 @@ final class CellFooterView: UIView {
     private func setupUI() {
         addSubview(likeButton)
         likeButton.snp.makeConstraints {
-            $0.left.equalToSuperview().inset(6.0)
+            $0.left.equalToSuperview().inset(10.0)
             $0.top.equalTo(self.snp.top).inset(6.0)
-            $0.width.height.equalTo(35.0)
+            $0.width.height.equalTo(30.0)
         }
-        
+
         addSubview(commentButton)
         commentButton.snp.makeConstraints {
-            $0.left.equalTo(likeButton.snp.right).offset(6.0)
+            $0.left.equalTo(likeButton.snp.right).offset(10.0)
             $0.top.equalTo(self.snp.top).offset(6.0)
-            $0.width.height.equalTo(35.0)
+            $0.width.height.equalTo(30.0)
         }
         
         addSubview(sendButton)
         sendButton.snp.makeConstraints {
-            $0.left.equalTo(commentButton.snp.right).offset(6.0)
+            $0.left.equalTo(commentButton.snp.right).offset(10.0)
             $0.top.equalTo(self.snp.top).offset(6.0)
-            $0.width.height.equalTo(35.0)
+            $0.width.height.equalTo(30.0)
         }
         
         addSubview(saveButton)
         saveButton.snp.makeConstraints {
-            $0.right.equalToSuperview().inset(6.0)
+            $0.right.equalToSuperview().inset(10.0)
             $0.top.equalTo(self.snp.top).offset(6.0)
-            $0.width.height.equalTo(35.0)
+            $0.width.height.equalTo(30.0)
         }
         
         addSubview(stackView)
@@ -118,8 +120,16 @@ final class CellFooterView: UIView {
     
     func configurePageControl() {
         pageControl.currentPage = 0
-        pageControl.tintColor = .red
-        pageControl.pageIndicatorTintColor = .black
-        pageControl.currentPageIndicatorTintColor = .green
+        pageControl.pageIndicatorTintColor = .gray
+        pageControl.currentPageIndicatorTintColor = .blue
     }
+    
+    @objc func likeButtonClicked() {
+        if likeButton.currentImage == #imageLiteral(resourceName: "baseline_favorite_border_black_18dp") {
+            likeButton.setImage(#imageLiteral(resourceName: "baseline_favorite_black_18dp"), for: .normal)
+        } else {
+            likeButton.setImage(#imageLiteral(resourceName: "baseline_favorite_border_black_18dp"), for: .normal)
+        }
+           likeButton.tintColor = .red
+       }
 }
